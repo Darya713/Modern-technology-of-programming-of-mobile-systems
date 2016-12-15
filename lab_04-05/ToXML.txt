@@ -1,0 +1,40 @@
+<by.bstu.solovei.education.staff.Staff>
+  <studlist>
+    <by.bstu.solovei.education.units.Student>
+      <Name>Владимир</Name>
+      <Surname>Ахраменок</Surname>
+      <Age>20</Age>
+      <id>249205140</id>
+      <Rating defined-in="by.bstu.solovei.education.units.Person">0</Rating>
+      <Birthday>23.09.1996</Birthday>
+      <Rating>2</Rating>
+    </by.bstu.solovei.education.units.Student>
+    <by.bstu.solovei.education.units.Student>
+      <Name>Дарья</Name>
+      <Surname>Ахраменок</Surname>
+      <Age>17</Age>
+      <id>1262724738</id>
+      <Rating defined-in="by.bstu.solovei.education.units.Person">0</Rating>
+      <Birthday>13.11.1998</Birthday>
+      <Rating>7</Rating>
+    </by.bstu.solovei.education.units.Student>
+    <by.bstu.solovei.education.units.Student>
+      <Name>Владимир</Name>
+      <Surname>Цыганенко</Surname>
+      <Age>23</Age>
+      <id>-1939849824</id>
+      <Rating defined-in="by.bstu.solovei.education.units.Person">0</Rating>
+      <Birthday>03.06.1993</Birthday>
+      <Rating>8</Rating>
+    </by.bstu.solovei.education.units.Student>
+    <by.bstu.solovei.education.units.Student>
+      <Name>Кирилл</Name>
+      <Surname>Цыганенко</Surname>
+      <Age>25</Age>
+      <id>-896777571</id>
+      <Rating defined-in="by.bstu.solovei.education.units.Person">0</Rating>
+      <Birthday>05.05.1991</Birthday>
+      <Rating>0</Rating>
+    </by.bstu.solovei.education.units.Student>
+  </studlist>
+</by.bstu.solovei.education.staff.Staff>

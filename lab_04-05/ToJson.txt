@@ -1,0 +1,1 @@
+"Staff{[STUDENT{Name='Владимир', Surname='Ахраменок', Birthday=23.09.1996', Age=20', Rating=2}, STUDENT{Name='Дарья', Surname='Ахраменок', Birthday=13.11.1998', Age=17', Rating=7}, STUDENT{Name='Владимир', Surname='Цыганенко', Birthday=03.06.1993', Age=23', Rating=8}, STUDENT{Name='Кирилл', Surname='Цыганенко', Birthday=05.05.1991', Age=25', Rating=0}]}"
