@@ -22,6 +22,7 @@ public class GPSTracker extends Service implements LocationListener {
     Location location;
     static double latitude;
     static double longitude;
+    static double speed;
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 100;
     private static final long MIN_TIME_BW_UPDATES = 1000 * 60 * 1;
 
@@ -51,6 +52,7 @@ public class GPSTracker extends Service implements LocationListener {
                         if (location != null) {
                             latitude = location.getLatitude();
                             longitude = location.getLongitude();
+                            speed = location.getSpeed();
                         }
                     }
                 }
@@ -65,6 +67,7 @@ public class GPSTracker extends Service implements LocationListener {
                             if (location != null) {
                                 latitude = location.getLatitude();
                                 longitude = location.getLongitude();
+                                speed = location.getSpeed();
                             }
                         }
                     }
@@ -99,6 +102,13 @@ public class GPSTracker extends Service implements LocationListener {
         return longitude;
     }
 
+    public double getSpeed(){
+        if(location != null){
+            speed = location.getSpeed();
+        }
+
+        return speed;
+    }
 
     public boolean canGetLocation() {
         return this.canGetLocation;

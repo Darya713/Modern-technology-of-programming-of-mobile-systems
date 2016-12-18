@@ -49,6 +49,17 @@
                 android:layout_toEndOf="@+id/imageView"
                 android:layout_marginLeft="8dp" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/speedometer"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/imageView3"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_toRightOf="@+id/distance"
+                android:layout_toEndOf="@+id/distance"
+                android:layout_centerVertical="true"/>
+
             <Button
                 android:id="@+id/route"
                 android:layout_width="wrap_content"
@@ -58,6 +69,17 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 km/h"
+                android:layout_alignBaseline="@+id/distance"
+                android:layout_alignBottom="@+id/distance"
+                android:layout_toRightOf="@+id/imageView3"
+                android:layout_toEndOf="@+id/imageView3"
+                android:layout_marginLeft="8dp"/>
 
         </RelativeLayout>
 

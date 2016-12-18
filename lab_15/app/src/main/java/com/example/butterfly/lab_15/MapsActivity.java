@@ -29,10 +29,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, DirectionFinderListener {
-    public static double latitude, longitude;
+    public static double latitude, longitude, mapsSpeed;
     private GoogleMap mMap;
     EditText start, finish;
-    TextView distance, timer;
+    TextView distance, timer, speed;
     Button route, location;
 
     GPSTracker gps;
@@ -54,6 +54,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         finish = (EditText) findViewById(R.id.finish);
         distance = (TextView) findViewById(R.id.distance);
         timer = (TextView) findViewById(R.id.timer);
+        speed = (TextView) findViewById(R.id.speed);
         route = (Button) findViewById(R.id.route);
         location = (Button) findViewById(R.id.location);
 
@@ -79,7 +80,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 if (gps.canGetLocation()) {
                     latitude = gps.getLatitude();
                     longitude = gps.getLongitude();
-                    showToast("Latitude: " + latitude + "\nLongitude: " + longitude);
+                    mapsSpeed = gps.getSpeed();
+                    showToast("Latitude: " + latitude + "\nLongitude: " + longitude + "\nSpeed: " + mapsSpeed);
                 } else {
                     gps.showSettingsAlert();
                 }
@@ -138,8 +140,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         for (Route route : routes) {
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(route.startLocation, 16));
-            ((TextView) findViewById(R.id.timer)).setText(route.duration.text);
-            ((TextView) findViewById(R.id.distance)).setText(route.distance.text);
+            timer.setText(route.duration.text);
+            distance.setText(route.distance.text);
 
             originMarkers.add(mMap.addMarker(new MarkerOptions()
                     .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_start))
