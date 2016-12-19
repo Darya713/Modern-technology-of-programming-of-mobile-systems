@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OOP_Lab_07</string>
+    <string-array name="courses">
+        <item>Базы данных</item>
+        <item>Программирование</item>
+        <item>Математика</item>
+        <item>Физика</item>
+    </string-array>
+</resources>

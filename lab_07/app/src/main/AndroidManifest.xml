@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.butterfly.lab_07">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fit"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.OneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.TwoActivity"
+            android:parentActivityName=".Activities.OneActivity">
+        </activity>
+        <activity android:name=".Activities.ThreeActivity"
+            android:parentActivityName=".Activities.TwoActivity">
+        </activity>
+        <activity android:name=".Activities.FourActivity"
+            android:parentActivityName=".Activities.ThreeActivity">
+        </activity>
+        <activity android:name=".Activities.FiveActivity"
+            android:parentActivityName=".Activities.FourActivity">
+        </activity>
+        <activity android:name=".Activities.ListActivity"
+            android:parentActivityName=".Activities.FiveActivity">
+        </activity>
+    </application>
+
+</manifest>
